@@ -1,0 +1,12 @@
+<%= form_with url: post_destiny_path, class: 'my-form' do |f| %>
+    <h1>Comece agora</h1>
+    <h2>Como devemos te chamar ?</h2>
+    <%= f.text_field :name %>
+    <h2>Qual seu email ?</h2>
+    <%= f.email_field :email %>
+    <h2>Telefone</h2>
+    <%= f.text_field :telefone %>
+    <h2>Mensagem</h2>
+    <%= f.text_field :msg %>
+    <%= f.submit "Enviar" %>
+<% end %>
