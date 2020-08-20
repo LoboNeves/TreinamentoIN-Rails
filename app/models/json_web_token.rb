@@ -1,14 +1,14 @@
 class JsonWebToken
-    secret = ENV["DEVISE_JWT_SECRET_KEY"]
-    
-    def self.enconde(payload)
-        JWT.enconde(payload, secret)
+    Secret = ENV["DEVISE_JWT_SECRET_KEY"]
+
+    def self.encode(payload)
+        JWT.encode(payload, Secret)
     end
 
     def self.decode(token)
         begin
             
-            decoded: JWT.decode(token, secret)
+            decoded = JWT.decode(token, Secret)
         rescue => exception
             return nil
         end
