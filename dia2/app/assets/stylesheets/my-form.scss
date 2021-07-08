@@ -1,0 +1,12 @@
+.my-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.my-form msg{
+    height: 100px;
+}
